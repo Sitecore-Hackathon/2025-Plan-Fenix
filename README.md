@@ -40,7 +40,7 @@ This creates a more intuitive connection between content and imagery, improving 
 
 ## Installation instructions
 ### Component 1: Plan Fénix Sitecore Module
-To install the Plan Fénix Tool, go to the Sitecore Installation Wizard, and select the zip file in the folder 2025-Plan-Fenix\Packages\plan-fenix-module-1.zip (from the git source control). The file contains the templates and script modules, for the sample content install the file plan-fenix-sample-content-1.zip.
+To install the Plan Fénix Tool, go to the Sitecore Installation Wizard, and select the zip file in the folder 2025-Plan-Fenix\packages\plan-fenix-module-1.zip (from the git source control). The file contains the templates and script modules, for the sample content install the file plan-fenix-sample-content-1.zip.
 
 The only restriction is that the new pages needs to inherit from the PlanFenixTemplate, because the script validates this inheritance. 
 
