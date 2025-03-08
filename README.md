@@ -30,7 +30,7 @@ MediaMatchEngine solves this challenge by:
 This creates a more intuitive connection between content and imagery, improving both author experience and content quality.
 
 ## Video link
-⟹ [MediaMatchEngine Demo](#video-link)
+⟹ [MediaMatchEngine Demo](https://youtu.be/5rgSTqSQE1Y)
 
 ## Pre-requisites and Dependencies
 - Sitecore SXA
