@@ -35,7 +35,7 @@ const App: React.FC = () => {
     }
   });
 
-  const apiUrl = `/sitecore/api/layout/render/jss?sc_apikey={646C0CC3-AEF5-49B6-98A4-D50BD3DCAF7F}&item=/${queryParam}&sc_site=hack2025-site&ngrok-skip-browser-warning=true`;
+  const apiUrl = `${import.meta.env.API_URL}/sitecore/api/layout/render/jss?sc_apikey=${import.meta.env.SITECORE_API_KEY}&item=/${queryParam}`;
 
   return (
     <CleanedDataProvider apiUrl={apiUrl}>
