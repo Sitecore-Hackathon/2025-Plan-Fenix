@@ -1,10 +1,13 @@
-interface RichTextProps {
-  text: string;
-}
+import { useCleanedData } from "../api/response";
 
-const RichText: React.FC<RichTextProps> = ({ text }) => {
+const RichText = () => {
+  const { data } = useCleanedData();
+
   return (
-    <p>{text}</p>
+    <div
+      className="text-justify text-lg"
+      dangerouslySetInnerHTML={{ __html: data?.content || '' }}
+    />
   );
 };
 

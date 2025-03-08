@@ -8,4 +8,18 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  server: {
+    proxy: {
+      '/sitecore': {
+        target: 'https://9382-186-4-169-151.ngrok-free.app',
+        changeOrigin: true,
+        secure: false
+      },
+      '/-': {
+        target: 'https://9382-186-4-169-151.ngrok-free.app',
+        changeOrigin: true,
+        secure: false
+      }
+    }
+  }
 })
