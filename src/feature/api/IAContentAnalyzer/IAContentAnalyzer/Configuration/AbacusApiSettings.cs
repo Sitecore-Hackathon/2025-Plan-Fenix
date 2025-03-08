@@ -5,5 +5,6 @@
         public string DeploymentToken { get; set; } = string.Empty;
         public string DeploymentId { get; set; } = string.Empty;
         public string ApiUrl { get; set; } = "https://api.abacus.ai/api/v0/execute_agent";
+        public string ApiKey { get; set; } = string.Empty;
     }
 }
