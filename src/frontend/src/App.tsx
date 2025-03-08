@@ -35,7 +35,7 @@ const App: React.FC = () => {
     }
   });
 
-  const apiUrl = `${import.meta.env.API_URL}/sitecore/api/layout/render/jss?sc_apikey=${import.meta.env.SITECORE_API_KEY}&item=/${queryParam}`;
+  const apiUrl = `${import.meta.env.VITE_API_URL}/sitecore/api/layout/render/jss?sc_apikey=${import.meta.env.VITE_SITECORE_API_KEY}&item=/${queryParam}`;
 
   return (
     <CleanedDataProvider apiUrl={apiUrl}>
