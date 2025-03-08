@@ -41,7 +41,6 @@ export const CleanedDataProvider: React.FC<CleanedDataProviderProps> = ({ childr
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
-          'ngrok-skip-browser-warning': 'true'
         },
         mode: 'cors' as RequestMode
       };
@@ -70,7 +69,7 @@ export const CleanedDataProvider: React.FC<CleanedDataProviderProps> = ({ childr
 
       const cleanedData: CleanedData = {
         imageUrls: fields.Images.map((image: any) => {
-          const url = image.url?.split('http://9382-186-4-169-151.ngrok-free.app')[1];
+          const url = image.url;
           return url || '';
         }),
         tags: fields.Tags?.value.split(',') || '',
